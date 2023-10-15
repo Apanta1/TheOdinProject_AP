@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head></head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variety of CSS</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>03-group-selectors</title>
     <style>
-        p {
-            background-color: green;
-            color: white;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 18px;
+        .first, .second{
+            font-size: 50px;
+            font-family: Helvetica, 'Times New Roman', sans-serif;
         }
-    </style>    
+        .first{
+            background-color: black;
+            color: white;
+        }
+
+        .second{
+            background-color: yellow;
+        }
+    </style>
+
 </head>
 <body>
-    <div>Style me via the external method</div>
-
-    <p>I would like to be styled with Internal CSS method, please.</p>
-
-    <button style="background-color: orange; color: black; font-size: 18px; ">Inline Method</button>
+    <p><button class ="first">Click Me!</button> <button class="second">No, Click Me!</button></p>
 </body>
 </html>
